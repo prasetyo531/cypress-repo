@@ -4,15 +4,19 @@ class signupPage {
   }
 
   clickJoin() {
-    cy.xpath('//a[contains(text(), "Join for Free")]').click();
+    cy.xpath('//a[@href="/?authMode=signup"]').click();
   }
 
   fillUsername(username) {
-    cy.get('input[name="username"]').type(username); // Adjust the selector as needed
+    cy.xpath('//input[@name="name"]').type(username); // Adjust the selector as needed
+  }
+
+  fillEmail(email) {
+    cy.xpath('//input[@name="email"]').type(email); // Adjust the selector as needed
   }
 
   fillPassword(password) {
-    cy.get('input[name="password"]').type(password); // Adjust the selector as needed
+    cy.xpath('//input[@name="password"]').type(password); // Adjust the selector as needed
   }
 
   submit() {
