@@ -1,6 +1,6 @@
 import signupPage from '@pages/signup.page';
 
-describe('Signup Coursera', () => {
+describe('@automation Signup Coursera', () => {
     beforeEach(() => {
         signupPage.visit();
     });
