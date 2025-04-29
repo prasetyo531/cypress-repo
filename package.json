@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:signup": "cypress run --browser chrome ,grep='@automation',grepFilterSpecs=true --headless"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.26.9",
     "@cypress/webpack-preprocessor": "^6.0.4",

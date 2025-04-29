@@ -1,6 +1,6 @@
 class signupPage {
   visit() {
-    cy.visit("/"); // Change this to your login URL
+    cy.visit('/'); // Change this to your login URL
   }
 
   clickJoin() {
@@ -24,7 +24,7 @@ class signupPage {
   }
 
   getErrorMessage() {
-    return cy.get(".error-message"); // Adjust the selector as needed
+    return cy.get('.error-message'); // Adjust the selector as needed
   }
 }
 
