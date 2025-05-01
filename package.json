@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "mochawesome:merge": "npx mochawesome-merge cypress/reports/*.json > mochawesome-report/mochawesome.json && npx marge mochawesome-report/mochawesome.json",
+    "mochawesome:delete": "rm -rf mochawesome-report/* || true",
     "cypress:open": "cypress open",
     "cypress:signup": "cypress run --browser chrome ,grep='@automation',grepFilterSpecs=true --headless"
   },
