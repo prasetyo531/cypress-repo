@@ -6,6 +6,17 @@ module.exports = defineConfig({
     baseUrl: 'https://www.coursera.org/',
     viewportWidth: 1200,
     viewportHeight: 800,
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportPageTitle: "Automated Test Status",
+      reportTitle: "Automated Test Reporting Dashboard",
+      showPassed: "true",
+      reportDir: 'cypress/reports',
+      overwrite: false,
+      html: true,
+      json: true,
+      charts: true,
+  },
     setupNodeEvents(on, config) {
       const options = {
         // Adjust the path to your webpack.config.js
