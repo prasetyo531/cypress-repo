@@ -15,7 +15,11 @@ module.exports = defineConfig({
     overwrite: false,
     html: true,
     json: true,
-    charts: true
+    charts: true,
+    retries: {
+      runMode: 1, // Number of retries when running in CI
+      openMode: 0 // Number of retries when running in the Cypress Test Runner
+    }
 },
   e2e: {
     baseUrl: 'https://www.coursera.org/',
