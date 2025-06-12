@@ -10,6 +10,7 @@
     "cypress:signup": "cypress run --browser chrome ,grep='@automation',grepFilterSpecs=true --headless"
   },
   "devDependencies": {
+    "dotenv": "^16.3.1",
     "@babel/preset-env": "^7.26.9",
     "@cypress/webpack-preprocessor": "^6.0.4",
     "babel-loader": "^10.0.0",

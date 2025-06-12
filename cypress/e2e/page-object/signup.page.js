@@ -4,7 +4,7 @@ class signupPage {
   }
 
   clickJoin() {
-    cy.xpath('//a[@href="/?authMode=signup"]').click();
+    cy.xpath('//a[@href="/signup"]').click();
   }
 
   fillUsername(username) {
