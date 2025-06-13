@@ -1,11 +1,11 @@
 const { defineConfig } = require('cypress');
 const webpackPreprocessor = require('@cypress/webpack-preprocessor');
 const dotenv = require('dotenv');
-const path = require('path');
 
 dotenv.config();
 
 module.exports = defineConfig({
+  projectId: '13935p',
   viewportWidth: 1200,
   viewportHeight: 800,
   defaultCommandTimeout: 10000,
@@ -21,8 +21,8 @@ module.exports = defineConfig({
     json: true,
     charts: true,
     retries: {
-      runMode: 1, // Number of retries when running in CI
-      openMode: 0, // Number of retries when running in the Cypress Test Runner
+      runMode: 1, // Number of retries when running from terminal
+      openMode: 0, // Number of retries when running in the cypress Test Runner
     },
   },
   e2e: {

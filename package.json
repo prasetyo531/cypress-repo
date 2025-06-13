@@ -7,7 +7,10 @@
     "mochawesome:merge": "mkdir -p mochawesome-report && npx mochawesome-merge cypress/reports/*.json > mochawesome-report/mochawesome.json && npx marge mochawesome-report/mochawesome.json",
     "mochawesome:delete": "rm -rf mochawesome-report/* || true",
     "cypress:open": "cypress open",
-    "cypress:signup": "cypress run --browser chrome ,grep='@automation',grepFilterSpecs=true --headless"
+    "cypress:signup": "cypress run --browser chrome ,grep='@automation',grepFilterSpecs=true --headless",
+    "cypress:run:chrome": "cypress run --browser chrome , grep='@automation',grepFilterSpecs=true --headless",
+    "cypress:run:electron": "cypress run --browser electron ,grep='@automation',grepFilterSpecs=true --headless",
+    "cypress:run:all": "yarn cypress:run:chrome && yarn cypress:run:electron"
   },
   "devDependencies": {
     "dotenv": "^16.3.1",
