@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@helper/*": ["cypress/e2e/bdd/helper/*"],
+      "@const/*": ["cypress/e2e/bdd/const/*"]
+    }
+  },
+  "include": ["cypress"]
+}
