@@ -22,6 +22,9 @@ jobs:
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
 
+      - name: Setup
+        run: cp .env.staging .env
+
       # refer from package json script run test
       - name: Run Cypress Signup Tests
         run: yarn cypress:signup
