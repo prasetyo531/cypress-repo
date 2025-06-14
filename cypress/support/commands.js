@@ -17,9 +17,8 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-import { BASE_URLS } from '@helper/route';
-import { API_ENDPOINT } from '@const/api';
+import { BASE_URLS } from '../../cypress/e2e/tests/helper/route';
+import { API_ENDPOINT } from '../../cypress/e2e/tests/const/api';
 
 Cypress.Commands.add("loginAndSetToken", () => {
 

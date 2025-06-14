@@ -31,3 +31,4 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     // Return true to let Cypress fail the test for other errors
     return true;
   });
+  
